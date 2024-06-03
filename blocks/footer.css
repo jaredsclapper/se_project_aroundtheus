@@ -1,0 +1,17 @@
+.footer {
+}
+
+.footer__title {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 318px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 67px 762px 60px 200px;
+  color: #545454;
+  font-size: 18px;
+  line-height: 21.78px;
+  font-weight: 400;
+  width: 318px;
+}
