@@ -4,33 +4,5 @@
 @import url(../blocks/header.css);
 @import url(../blocks/profile.css);
 @import url(../blocks/cards.css);
+@import url(../blocks/card.css);
 @import url(../blocks/footer.css);
-
-@media screen and (max-width: 320px) {
-  .profile {
-    flex-direction: column;
-    align-content: center;
-  }
-
-  .profile__info {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .profile__title {
-    width: 100%;
-    text-align: center;
-  }
-
-  .profile__description {
-    width: 100%;
-    text-align: center;
-  }
-
-  .profile__add-button {
-    margin: 0;
-    width: 282px;
-  }
-}

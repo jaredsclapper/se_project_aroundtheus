@@ -15,3 +15,15 @@
   font-weight: 400;
   width: 318px;
 }
+
+@media screen and (max-width: 720px) {
+  .footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__title {
+    padding: 0;
+    margin: 0;
+  }
+}
