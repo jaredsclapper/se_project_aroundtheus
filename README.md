@@ -58,4 +58,8 @@ N/A
 
 ## link to video describing project
 
-https://drive.google.com/file/d/12VCk3CntPLo6UEwtmd0fWE_e0yvn7fdD/view?usp=sharing
+https://drive.google.com/file/d/1l9BBgBmatynanvuiodwcnp7WszPv7lQK/view?usp=drive_link
+
+## link to deployed website
+
+https://jaredsclapper.github.io/se_project_aroundtheus/
