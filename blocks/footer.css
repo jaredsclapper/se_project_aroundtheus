@@ -1,24 +1,28 @@
+.footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
 .footer__title {
-  max-width: 318px;
-  max-height: 18px;
-  display: block;
+  max-width: 880px;
   justify-content: flex-start;
-  position: relative;
-  margin: 67px 0 60px;
-  padding-left: 200px;
+  display: block;
   color: #545454;
   font-size: 18px;
   line-height: 21.78px;
+  margin: 67px 20px 60px;
+  position: relative;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 320px) {
+  .footer {
+    margin: 48px 20px 36px;
+  }
+
   .footer__title {
-    margin: 48px 0 36px 0;
+    margin: 0 20px 36px;
     line-height: 16.94px;
     font-size: 14px;
     max-width: 282px;
-    padding-left: 19px;
   }
 }
-
-/*Is this what you meant by removing the big left space and adjusting the footer sizes? If not, please advise further as I do not know what you ean and do not know how to fix after further investigation. Thank you!*/

@@ -1,7 +1,6 @@
 .profile {
   display: flex;
   align-items: center;
-  padding-top: 40px;
   margin-bottom: 51px;
 }
 
@@ -27,7 +26,6 @@
   grid-area: title;
   margin: 0;
   font-weight: 500;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -89,12 +87,10 @@
   .profile__info {
     width: 100%;
     justify-content: center;
-    margin-top: 30px;
     padding: 0;
     flex-wrap: wrap;
     min-width: 196px;
     max-width: 282px;
-    max-height: 286px;
     align-items: center;
   }
 
@@ -139,5 +135,9 @@
   .profile__add-button {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .profile__image {
+    margin: 42px 99px 30px 101px;
   }
 }
