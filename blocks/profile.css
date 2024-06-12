@@ -28,6 +28,7 @@
   font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .profile__edit-button {
@@ -80,10 +81,6 @@
     margin: 0;
   }
 
-  .profile__image {
-    margin-top: 42px;
-  }
-
   .profile__info {
     width: 100%;
     justify-content: center;
@@ -101,7 +98,6 @@
     line-height: 26.63px;
     margin: 0;
     max-width: 282px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -138,6 +134,6 @@
   }
 
   .profile__image {
-    margin: 42px 99px 30px 101px;
+    margin: 0 auto 30px;
   }
 }

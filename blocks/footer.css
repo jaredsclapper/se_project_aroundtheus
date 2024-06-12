@@ -1,28 +1,33 @@
 .footer {
-  text-align: center;
   padding: 10px 0;
+  max-width: 880px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .footer__title {
-  max-width: 880px;
+  width: 100%;
   justify-content: flex-start;
   display: block;
   color: #545454;
   font-size: 18px;
   line-height: 21.78px;
-  margin: 67px 20px 60px;
-  position: relative;
+  margin: 67px 0 60px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 1250px) {
   .footer {
-    margin: 48px 20px 36px;
+    padding: 0;
+    margin: 48px 19px 36px;
+    max-width: 282px;
+    width: 100%;
   }
 
   .footer__title {
-    margin: 0 20px 36px;
+    margin: 0;
     line-height: 16.94px;
     font-size: 14px;
-    max-width: 282px;
+    width: 100%;
   }
 }
+/*please provide guidance on how to keep footer in place when scrolling from 1280px to 320px. Tutors are not being clear and I cannot find online. Thank you! */

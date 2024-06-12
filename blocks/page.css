@@ -29,16 +29,9 @@
 @media screen and (min-width: 320px) and (max-width: 1250px) {
   .page {
     align-items: center;
-    margin: 10px;
   }
 }
 
 .page__section {
   margin: 0 auto;
-}
-
-@media screen and (min-width: 320px) {
-  .page__content {
-    padding: 10px;
-  }
 }

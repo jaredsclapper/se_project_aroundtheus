@@ -17,13 +17,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 0 0 10px 10px;
-  overflow: visible;
   flex-direction: row;
-}
-
-.card__like-button_vanoise {
-  position: relative;
-  overflow: hidden;
 }
 
 .card__title {
