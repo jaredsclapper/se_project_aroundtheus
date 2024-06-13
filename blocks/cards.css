@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1250px) {
+@media screen and (min-width: 320px) and (max-width: 750px) {
   .cards__list {
     margin-left: 20px;
     margin-right: 20px;

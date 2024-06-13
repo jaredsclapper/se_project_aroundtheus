@@ -16,11 +16,10 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1250px) {
+@media screen and (min-width: 320px) and (max-width: 750px) {
   .header {
     margin: 28px 0 42px 0;
     box-sizing: border-box;
-    max-height: 56px;
   }
 
   .header__image {
