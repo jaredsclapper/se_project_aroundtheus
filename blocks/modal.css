@@ -24,7 +24,7 @@
   box-sizing: border-box;
 }
 
-.modal__heading {
+.modal__title {
   font: "Inter", Arial, sans-serif;
   font-weight: 900;
   font-size: 24px;
@@ -97,7 +97,7 @@
   margin-bottom: 30px;
 }
 
-.form__input {
+.modal__input {
   border: none;
   border-bottom: 1px solid #000000;
   font-style: "Inter", Arial, sans-serif;
