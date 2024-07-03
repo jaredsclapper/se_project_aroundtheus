@@ -85,13 +85,13 @@
   opacity: 0.8;
 }
 
-.form__fieldset {
+.modal__fieldset {
   border: none;
   margin: auto;
   padding: 0;
 }
 
-.form__label {
+.modal__label {
   padding: 0;
   height: 27px;
   margin-bottom: 30px;
