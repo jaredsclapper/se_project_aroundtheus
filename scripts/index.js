@@ -41,7 +41,7 @@ const cardTemplate =
 const profileEditForm = profileEditModal.querySelector(".modal__form");
 
 function closePopup() {
-  profileEditModal.classList.remove("modal__opened");
+  profileEditModal.classList.remove("modal_opened");
 }
 
 profileEditButton.addEventListener("click", () => {
