@@ -1,7 +1,8 @@
 function showInputError(formEl, inputEl, { inputErrorClass, errorClass }) {
   const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
   inputEl.classList.add(inputErrorClass);
-  errorMessageEl.textContent = inputEl.validationMesssage;
+  console.dir(inputEl);
+  errorMessageEl.textContent = inputEl.validationMessage;
   errorMessageEl.classList.add(errorClass);
 }
 
@@ -14,6 +15,7 @@ function hideInputError(formEl, inputEl, { inputErrorClass, errorClass }) {
 
 function checkInputValidity(formEl, inputEl, options) {
   if (!inputEl.validity.valid) {
+    console.log("input not valid");
     return showInputError(formEl, inputEl, options);
   }
 
@@ -43,6 +45,7 @@ function setEventListeners(formEl, options) {
     inputEl.addEventListener("input", (e) => {
       checkInputValidity(formEl, inputEl, options);
       toggleButtonState(inputEls, submitButton, options);
+      console.log("hello");
     });
   });
 }
@@ -55,26 +58,36 @@ function enableValidation(options) {
     });
 
     setEventListeners(formEl, options);
-    // Look for all inputs inside form
-    // Loop through all the inputs to see if all are valid
-    //If input is not valid
-    //get validation message
-    //add error class t input
-    //display errr message
-    //disable button
-    //If all inputs are valid
-    //enable button
-    //reset messages
   });
 }
+
+// Trying to figure out how to get out of modal with escape key and clicking outside
+
+//function handleEscape(evt) {
+//if (evt.key === "Escape") {
+// closePopup(modalOpened);
+// }
+//}
+
+//function openModal(modal) {
+//modal.classList.add("popup_is-opened");
+//document.addEventListener("keydown", handleEscModal);
+//}
+
+//function closePopup(modal) {
+//modal.classList.remove("popup_is-opened");
+//document.removeEventListener("keydown", handleEscModal);
+//}
+
+//document.addEventListener("click", handleCloseOveraly);
 
 const config = {
   formSelector: ".modal__form",
   inputSelector: ".modal__input",
   submitButtonSelector: ".modal__button",
-  inactiveButtonClass: "popup__button_disabled",
-  inputErrorClass: "popup__input_type_error",
-  errorClass: "popup__error_visible",
+  inactiveButtonClass: "modal__button_disabled",
+  inputErrorClass: "modal__input_type_error",
+  errorClass: "modal__error_visible",
 };
 
 enableValidation(config);
