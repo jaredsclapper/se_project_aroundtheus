@@ -156,7 +156,8 @@
 }
 
 .modal__button_disabled {
-  border: 1px;
+  border: 1px solid #000000;
+  background-color: white;
   opacity: 0.2;
   pointer-events: none;
   color: #000000;

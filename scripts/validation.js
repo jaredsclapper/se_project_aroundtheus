@@ -61,7 +61,9 @@ function enableValidation(options) {
   });
 }
 
-// Trying to figure out how to get out of modal with escape key and clicking outside
+// LAst bit of added JS. Trying to figure out how to get out of modal with escape key and clicking outside
+
+let modalOpened;
 
 function handleEscape(evt) {
   if (evt.key === "Escape") {
@@ -70,13 +72,20 @@ function handleEscape(evt) {
 }
 
 function openModal(modal) {
-  modal.classList.add("popup_is-opened");
-  document.addEventListener("keydown", handleEscModal);
+  modal.classList.add("modal_opened");
+  modalOpened = modal;
+  document.addEventListener("keydown", handleEscape);
 }
 
 function closePopup(modal) {
-  modal.classList.remove("popup_is-opened");
-  document.removeEventListener("keydown", handleEscModal);
+  modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscape);
+}
+
+function handleCloseOverlay(evt) {
+  if (evt.target.classList.contains(".modal__container")) {
+    closePopup(modalOpened);
+  }
 }
 
 document.addEventListener("click", handleCloseOveraly);
