@@ -63,23 +63,23 @@ function enableValidation(options) {
 
 // Trying to figure out how to get out of modal with escape key and clicking outside
 
-//function handleEscape(evt) {
-//if (evt.key === "Escape") {
-// closePopup(modalOpened);
-// }
-//}
+function handleEscape(evt) {
+  if (evt.key === "Escape") {
+    closePopup(modalOpened);
+  }
+}
 
-//function openModal(modal) {
-//modal.classList.add("popup_is-opened");
-//document.addEventListener("keydown", handleEscModal);
-//}
+function openModal(modal) {
+  modal.classList.add("popup_is-opened");
+  document.addEventListener("keydown", handleEscModal);
+}
 
-//function closePopup(modal) {
-//modal.classList.remove("popup_is-opened");
-//document.removeEventListener("keydown", handleEscModal);
-//}
+function closePopup(modal) {
+  modal.classList.remove("popup_is-opened");
+  document.removeEventListener("keydown", handleEscModal);
+}
 
-//document.addEventListener("click", handleCloseOveraly);
+document.addEventListener("click", handleCloseOveraly);
 
 const config = {
   formSelector: ".modal__form",
