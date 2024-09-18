@@ -45,7 +45,6 @@ function setEventListeners(formEl, options) {
     inputEl.addEventListener("input", (e) => {
       checkInputValidity(formEl, inputEl, options);
       toggleButtonState(inputEls, submitButton, options);
-      console.log("hello");
     });
   });
 }
@@ -60,35 +59,6 @@ function enableValidation(options) {
     setEventListeners(formEl, options);
   });
 }
-
-// LAst bit of added JS. Trying to figure out how to get out of modal with escape key and clicking outside
-
-let modalOpened;
-
-function handleEscape(evt) {
-  if (evt.key === "Escape") {
-    closePopup(modalOpened);
-  }
-}
-
-function openModal(modal) {
-  modal.classList.add("modal_opened");
-  modalOpened = modal;
-  document.addEventListener("keydown", handleEscape);
-}
-
-function closePopup(modal) {
-  modal.classList.remove("modal_opened");
-  document.removeEventListener("keydown", handleEscape);
-}
-
-function handleCloseOverlay(evt) {
-  if (!evt.target.classList.contains(".modal__container")) {
-    closePopup(evt.target);
-  }
-}
-
-document.addEventListener("click", handleCloseOverlay);
 
 const config = {
   formSelector: ".modal__form",
