@@ -83,12 +83,12 @@ function closePopup(modal) {
 }
 
 function handleCloseOverlay(evt) {
-  if (evt.target.classList.contains(".modal__container")) {
-    closePopup(modalOpened);
+  if (!evt.target.classList.contains(".modal__container")) {
+    closePopup(evt.target);
   }
 }
 
-document.addEventListener("click", handleCloseOveraly);
+document.addEventListener("click", handleCloseOverlay);
 
 const config = {
   formSelector: ".modal__form",
